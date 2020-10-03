@@ -1,0 +1,118 @@
+* {
+	font-family: "Roboto", sans-serif;
+	box-sizing: : border-box;
+	font-weight: 300;
+}
+
+body {
+	background: #de6161;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	color: white;
+}
+
+#location {
+	display: block;
+	border: none;
+	margin-top: 15px;
+
+	background: rgba(255, 255, 255, .5);
+	border-radius: 10px;
+	padding: 20px;
+	color: white;
+	outline: none;
+	width: 95%;
+	font-size: 30px;
+}
+
+#location:placeholder {
+	color: rgba(255, 255, 255, .7);
+}
+
+#show {
+	display: block;
+	border: none;
+	margin-top: 15px;
+
+	background: rgba(255, 255, 255, .5);
+	border-radius: 10px;
+	padding: 20px;
+	color: white;
+	outline: none;
+	width: 100%;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	background: #FF5F6D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#show:hover {
+	opacity: .9;
+}
+
+#spaces {
+	display: block;
+	border: none;
+	margin-top: 15px;
+
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	padding: 7px;
+	color: white;
+	outline: none;
+	width: 98.5%;
+	font-size: 4px;
+	font-weight: bold;
+	text-transform: uppercase;
+
+
+}
+
+#headers {
+	display: block;
+	border: none;
+	margin-top: 15px;
+
+	background: rgba(255, 255, 255, .5);
+	border-radius: 10px;
+	padding: 20px;
+	color: white;
+	outline: none;
+	width: 35%;
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+
+
+}
+
+#info {
+	display: block;
+	border: none;
+	margin-top: -80px;
+	margin-left: 100px;
+	padding-top: 20px;
+	background: rgba(255, 255, 255, 0);
+	border-radius: 10px;
+	padding: 0px;
+	color: white;
+	outline: none;
+	width: 95%;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+
+
+}
+#weatherIcon {
+	padding: 20px;
+	height: 8%;
+	width: 8%;
+	margin-left: -25px;
+	padding-left: 20px;
+	}

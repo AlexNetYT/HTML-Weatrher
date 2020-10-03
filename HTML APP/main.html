@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Погода</title>
+
+  <script src="eel.js"></script>
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+ </head>
+ <body>
+
+ 	<input id="location" type="text" placeholder="Введите город и страну ...." required="" value="Москва, Россия">
+
+ 	<button id="show">Узнать погоду</button>
+
+ 	<div id="spaces"></div>
+  <img id = "weatherIcon" src=""></img>
+ 	<div id="info"></div>
+
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+ 	<script type="text/javascript">
+
+ 		async function display_weather() {
+ 			let place = document.getElementById('location').value;
+
+ 			let res = await eel.get_weather(place)();
+      let icon = await eel.get_weather_icon(place)();
+ 			document.getElementById('info').innerHTML = res
+      document.getElementById('weatherIcon').src = icon
+ 	}
+ 	jQuery('#show').on('click' , function(){
+ 		display_weather()
+ 	})
+ 	</script>
+ </body>
+</html>
